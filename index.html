@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pranav Chauhan | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--pink:#f3a9c5;--purple:#c9b9ff;--mint:#c5eddf;--dark:#27233e;--paper:#fff8f1}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--dark)}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,90%);margin:auto}
+header{position:sticky;top:0;background:#fff8f1eF;backdrop-filter:blur(12px);z-index:10;border-bottom:1px solid #ddd}
+nav{height:75px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:26px Pacifico;color:#b14e80}
+nav ul{display:flex;gap:25px;list-style:none}
+nav a:hover{color:#b14e80}
+.hero{min-height:85vh;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:35px;padding:65px 0}
+.tag{background:#fce1ed;padding:9px 16px;border-radius:30px;color:#9c426f;font-weight:700;font-size:12px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.15;margin:25px 0;letter-spacing:-3px}
+h1 span{font-family:Pacifico;color:#b14e80;font-weight:400}
+.hero p,.section-intro{color:#68627b;line-height:1.9;font-size:16px}
+.buttons{display:flex;gap:14px;margin-top:27px;flex-wrap:wrap}
+.btn{padding:14px 22px;border-radius:12px;font-weight:700;display:inline-block;transition:.3s}
+.btn:hover{transform:translateY(-4px)}
+.primary{background:var(--dark);color:white}
+.secondary{background:white;border:1px solid #ddd}
+.art{height:370px;border-radius:48% 48% 25px 25px;background:linear-gradient(140deg,var(--pink),var(--purple),var(--mint));display:grid;place-items:center;box-shadow:0 20px 50px #b9a1bb55;transform:rotate(3deg)}
+.initials{width:180px;height:180px;border-radius:50%;background:#ffffffbd;display:grid;place-items:center;font:60px Pacifico;color:#a34e7c}
+section{padding:85px 0}
+.heading{font-size:42px;margin:12px 0 15px;letter-spacing:-2px}
+.kicker{color:#b14e80;font-weight:800;font-size:12px;letter-spacing:3px;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:30px}
+.card{background:white;padding:27px;border-radius:22px;border:1px solid #eee;transition:.3s;box-shadow:0 8px 25px #4936530a}
+.card:hover{transform:translateY(-7px);box-shadow:0 15px 35px #49365320}
+.card h3{margin:12px 0;font-size:21px}
+.card p{color:#68627b;line-height:1.8;font-size:14px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.skill{padding:24px;background:white;border-radius:18px;border:1px solid #eee}
+.skill b{display:block;margin:10px 0}
+.skill p{font-size:13px;color:#68627b;line-height:1.7}
+.project-icon{font-size:38px}
+.project-link{display:inline-block;margin-top:15px;color:#a64b7d;font-weight:800;font-size:13px}
+.contact{background:linear-gradient(120deg,#f7d2e2,#e4d9ff,#d3f0e5);padding:40px;border-radius:25px}
+.contact p{line-height:1.9;color:#5e5870;margin:15px 0}
+footer{padding:30px 0;text-align:center;color:#777;font-size:13px}
+.reveal{opacity:0;transform:translateY(25px);transition:.7s}
+.reveal.show{opacity:1;transform:translateY(0)}
+@media(max-width:750px){
+.hero{grid-template-columns:1fr;text-align:center}
+.buttons{justify-content:center}
+.art{height:300px;width:85%;margin:20px auto}
+.grid{grid-template-columns:1fr}
+.skills{grid-template-columns:1fr 1fr}
+nav ul{gap:10px;font-size:11px}
+.heading{font-size:34px}
+}
+@media(max-width:430px){nav ul{gap:7px}.skills{grid-template-columns:1fr}nav a{font-size:10px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+
+<body>
+<header>
+<nav class="container">
+<a class="logo" href="#home">Pranav.</a>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<div class="container hero" id="home">
+<div class="reveal">
+<span class="tag">✦ WELCOME TO MY PORTFOLIO</span>
+<h1>Hello, I'm<br><span>Pranav Chauhan</span></h1>
+<p>B.Tech student, web developer and content writer. I love building digital experiences, exploring technology and transforming creative ideas into reality.</p>
+<div class="buttons">
+<a class="btn primary" href="#projects">Explore My Work ↗</a>
+<a class="btn secondary" href="#contact">Contact Me</a>
+</div>
+</div>
+<div class="art reveal"><div class="initials">PC</div></div>
+</div>
+
+<section id="about">
+<div class="container">
+<div class="kicker">ABOUT ME</div>
+<h2 class="heading">A little about myself.</h2>
+<p class="section-intro">I'm a second-year B.Tech Chemical and Biochemical Engineering student at Galgotias University. I enjoy combining technology, creativity and communication to build meaningful projects.</p>
+<div class="grid">
+<div class="card reveal"><div class="project-icon">🎓</div><h3>Education</h3><p>Galgotias University<br>B.Tech – Chemical and Biochemical Engineering<br>Expected graduation: 2029</p></div>
+<div class="card reveal"><div class="project-icon">✨</div><h3>My Interests</h3><p>Web development, content writing, video editing, animation and technology-driven solutions.</p></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<div class="kicker">MY EXPERTISE</div>
+<h2 class="heading">Skills & Interests</h2>
+<p class="section-intro">A growing collection of skills developed through learning and practical projects.</p>
+<div class="skills">
+<div class="skill reveal">🌐<b>Web Development</b><p>Front-end and back-end development, responsive websites.</p></div>
+<div class="skill reveal">✍️<b>Content Writing</b><p>Writing and communicating ideas clearly.</p></div>
+<div class="skill reveal">🎬<b>Video Editing</b><p>Video editing and visual storytelling.</p></div>
+<div class="skill reveal">🎨<b>Animation</b><p>Creative motion and animated experiences.</p></div>
+<div class="skill reveal">🧠<b>Problem Solving</b><p>Learning, experimenting and finding solutions.</p></div>
+<div class="skill reveal">🔬<b>Technology</b><p>Exploring science and technology applications.</p></div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<div class="kicker">MY WORK</div>
+<h2 class="heading">Featured Projects</h2>
+<p class="section-intro">Some projects that showcase my learning and creativity.</p>
+<div class="grid">
+<div class="card reveal">
+<div class="project-icon">🌱</div><h3>AgriGuard</h3>
+<p>A platform for farmers featuring crop disease prediction, weather information and market prices.</p>
+<a class="project-link" href="https://pranavv016.github.io/AgriGuard/" target="_blank" rel="noopener">VIEW PROJECT ↗</a>
+</div>
+<div class="card reveal">
+<div class="project-icon">💧</div><h3>AquaPure Services</h3>
+<p>A company website with project enquiries, career applications and employee/admin management features.</p>
+<a class="project-link" href="https://pranavv016.github.io/Aquapure_services/" target="_blank" rel="noopener">VIEW PROJECT ↗</a>
+</div>
+<div class="card reveal">
+<div class="project-icon">💬</div><h3>WellCare AI</h3>
+<p>An educational health-awareness chatbot exploring public datasets and symptom information.</p>
+<span class="project-link">IN DEVELOPMENT</span>
+</div>
+<div class="card reveal">
+<div class="project-icon">📝</div><h3>Content Writing</h3>
+<p>Practical content writing experience gained during an internship at InAmigos Foundation.</p>
+<a class="project-link" href="#experience">MY EXPERIENCE ↓</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+<div class="kicker">EXPERIENCE</div>
+<h2 class="heading">My Journey</h2>
+<div class="card reveal">
+<h3>Content Writer Intern – InAmigos Foundation</h3>
+<p><b>Duration: 2 Weeks</b></p>
+<p>Gained practical experience in content writing and communicating information clearly for an organisation.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="contact reveal">
+<div class="kicker">GET IN TOUCH</div>
+<h2 class="heading">Let's create something!</h2>
+<p>I'm open to internship opportunities, collaborations and learning experiences. Feel free to connect with me.</p>
+<p><b>Email:</b> YOUR_EMAIL_HERE<br><b>LinkedIn:</b> YOUR_LINKEDIN_URL_HERE</p>
+<a class="btn primary" href="mailto:YOUR_EMAIL_HERE">Say Hello ↗</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> Pranav Chauhan | Built with creativity ✦</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+const observer = new IntersectionObserver(entries => {
+ entries.forEach(entry => {
+  if(entry.isIntersecting){entry.target.classList.add("show");observer.unobserve(entry.target);}
+ });
+},{threshold:0.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
